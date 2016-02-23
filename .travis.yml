@@ -19,4 +19,4 @@ after_success:
   - echo TRAVIS_PULL_REQUEST = $TRAVIS_PULL_REQUEST
   - test -n "$TRAVIS_TAG" &&
     test "$TRAVIS_PULL_REQUEST" = "false" &&
-    sbt -jvm-opts test
+    sbt test
